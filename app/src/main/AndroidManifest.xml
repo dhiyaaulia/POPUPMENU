@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Parameter_Act3">
-        <activity android:name=".ActivityDaftar"
+        <activity android:name=".ActivityLihatData"
+            android:parentActivityName=".Home_Activity"></activity>
+        <activity android:name=".Home_Activity"
             android:parentActivityName=".MainActivity"></activity>
-       <activity
-           android:name=".ActivityKedua"
-           android:label="Login Berhasil"
-           android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".ActivityDaftar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityKedua"
+            android:label="Login Berhasil"
+            android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-       </activity>
-
+        </activity>
     </application>
 
 </manifest>
